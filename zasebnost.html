@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LYRA – politika zasebnosti</title>
+<meta name="description" content="Kako LYRA ravna s podatki: ostanejo na napravi uporabnika, Google podatki samo za prikaz v LYRA, brez deljenja in prodaje.">
+<link rel="stylesheet" href="slog.css">
+</head>
+<body>
+<main>
+  <header>
+    <a class="znak" href="./">LYRA</a>
+    <nav><a href="./">Domov</a><a href="zasebnost.html" aria-current="page">Zasebnost</a><a href="#en">English</a></nav>
+  </header>
+
+  <h1>Politika zasebnosti</h1>
+  <p class="muted">Velja od 18. 11. 2026.</p>
+
+  <h2>Na kratko</h2>
+  <ul>
+    <li>LYRA teče na napravi uporabnika. Podatki se shranjujejo samo tam – ni skupnega strežnika in ni oglaševanja.</li>
+    <li>Podatki iz Googla se uporabljajo samo za prikaz in funkcije v LYRA, ki jih uporabnik sam vklopi. <b>Ne delimo jih in ne prodajamo.</b></li>
+    <li>Gmail LYRA samo bere (pošte ne pošilja, ne briše in ne spreminja).</li>
+    <li>Dostop lahko uporabnik kadar koli prekliče.</li>
+  </ul>
+
+  <h2>Katere podatke Googla LYRA uporablja</h2>
+  <table>
+    <tr><th>Storitev (dovoljenje)</th><th>Za kaj</th></tr>
+    <tr><td>Google Koledar (<code>calendar.events</code>, <code>calendar.calendarlist.readonly</code>)</td><td>Prikaz dogodkov v LYRA in dodajanje dogodkov, ki jih uporabnik ustvari v LYRA.</td></tr>
+    <tr><td>Google Tasks (<code>tasks</code>)</td><td>Usklajevanje seznamov opravil med LYRA in Google Tasks (branje in pisanje opravil uporabnika).</td></tr>
+    <tr><td>YouTube (<code>youtube.readonly</code>)</td><td>Prikaz novih videov naročnin in iskanje videov – samo branje.</td></tr>
+    <tr><td>Gmail (<code>gmail.readonly</code>)</td><td>Prikaz pomembne pošte (pošiljatelj, zadeva, prva vrstica, čas) po pravilih, ki jih nastavi uporabnik – samo branje.</td></tr>
+    <tr><td>Osnovni podatki (<code>openid</code>, <code>email</code>)</td><td>Prikaz, kateri račun je povezan.</td></tr>
+  </table>
+
+  <h2>Kje so podatki</h2>
+  <p>Žetoni za dostop do Googla so šifrirani (AES-256-GCM) v bazi na napravi uporabnika. Podatki iz Googla se hranijo le kratek čas za hitrejši prikaz (predpomnilnik) ali kot povezave za usklajevanje (npr. kateri opravek v LYRA ustreza kateremu v Google Tasks). Vsebina e-pošte se ne shranjuje trajno, razen kratkih povzetkov za prikaz.</p>
+
+  <h2>Deljenje</h2>
+  <p>Podatkov Googla ne delimo s tretjimi osebami, jih ne prodajamo in jih ne uporabljamo za oglaševanje ali učenje modelov umetne inteligence. Vsebina e-pošte se ne pošilja pomočnikom umetne inteligence ali botom, razen če uporabnik to izrecno vklopi v nastavitvah; tudi takrat samo za odgovor na njegovo zahtevo.</p>
+  <p>Uporaba in prenos podatkov, prejetih prek Google API, sledita <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, vključno z zahtevami Limited Use.</p>
+
+  <h2>Preklic in izbris</h2>
+  <p>Povezavo z Googlom uporabnik odstrani v LYRA (Nastavitve → Povezave → Google → Odjava), kar prekliče žeton in izbriše shranjene žetone. Dostop lahko prekliče tudi na <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Ker so podatki na napravi uporabnika, jih ta izbriše z izbrisom povezave ali namestitve.</p>
+
+  <h2>Vprašanja</h2>
+  <p>Vprašanja in prijave: <a href="https://github.com/suhadolc/lyra-info/issues">GitHub Issues repozitorija lyra-info</a>.</p>
+
+  <section id="en" class="jezik" lang="en">
+    <h1>Privacy policy</h1>
+    <p class="muted">Effective 18 November 2026.</p>
+    <h2>Summary</h2>
+    <ul>
+      <li>LYRA runs on the user's own device. Data is stored only there – there is no shared server and no advertising.</li>
+      <li>Google user data is used only to provide features inside LYRA that the user turns on. <b>It is not shared or sold.</b></li>
+      <li>Gmail access is read-only (LYRA does not send, delete or modify mail).</li>
+      <li>The user can revoke access at any time.</li>
+    </ul>
+    <h2>Google data used</h2>
+    <table>
+      <tr><th>Service (scope)</th><th>Purpose</th></tr>
+      <tr><td>Google Calendar (<code>calendar.events</code>, <code>calendar.calendarlist.readonly</code>)</td><td>Show events in LYRA and add events the user creates in LYRA.</td></tr>
+      <tr><td>Google Tasks (<code>tasks</code>)</td><td>Synchronise the user's task lists between LYRA and Google Tasks (read and write).</td></tr>
+      <tr><td>YouTube (<code>youtube.readonly</code>)</td><td>Show new videos from subscriptions and search videos – read-only.</td></tr>
+      <tr><td>Gmail (<code>gmail.readonly</code>)</td><td>Show important mail (sender, subject, first line, time) according to rules set by the user – read-only.</td></tr>
+      <tr><td>Basic profile (<code>openid</code>, <code>email</code>)</td><td>Show which account is connected.</td></tr>
+    </table>
+    <h2>Storage</h2>
+    <p>Google access tokens are encrypted (AES-256-GCM) in a database on the user's device. Google data is kept only briefly as a cache for display, or as links needed for synchronisation. Email content is not stored permanently beyond short excerpts for display.</p>
+    <h2>Sharing</h2>
+    <p>Google user data is not shared with third parties, not sold, and not used for advertising or to train AI models. Email content is not sent to AI assistants or bots unless the user explicitly enables it in settings, and then only to answer the user's own request.</p>
+    <p>LYRA's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <h2>Revoking and deletion</h2>
+    <p>The user disconnects Google in LYRA (Settings → Connections → Google → Sign out), which revokes the token and deletes stored tokens, or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. As data lives on the user's device, removing the connection or the installation deletes it.</p>
+    <h2>Contact</h2>
+    <p>Questions: <a href="https://github.com/suhadolc/lyra-info/issues">GitHub Issues of the lyra-info repository</a>.</p>
+  </section>
+
+  <footer>LYRA · <a href="./">Domov / Home</a></footer>
+</main>
+</body>
+</html>
